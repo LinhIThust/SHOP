@@ -104,7 +104,27 @@
     width: 404px;
     border: 1px solid #ff0303;
     background-color: var(--white-color);
-    /* display: none; */
+    display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+}
+
+.header__notify::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 20px;
+    right: 0px;
+    top: -20px;
+    /* background-color: rgb(37, 243, 10); */
 }
 
 .header__nottify-header {
