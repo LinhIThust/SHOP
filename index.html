@@ -18,7 +18,20 @@
 
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--separate"> Vào cửa hàng của Linh Đồng</li>
+                        <li class="header__navbar-item header__navbar-item--displayqr header__navbar-item--separate">
+                            Vào cửa hàng của Linh Đồng
+                            <div class="header__qr">
+                                <img src="assets/img/qr_code.png" alt="QR_CODE" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="assets/img/gg-play.png" alt="GooglePlay" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="assets/img/app-store.png" alt="Appstore" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                         <li class="header__navbar-item">
                             Kết nối
                             <a href="https://www.facebook.com/linhcopper" class="header__navbar-icon-link">
@@ -32,9 +45,47 @@
                         </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <i class="header__navbar-icon fas fa-bell"></i> Thông báo
-
+                        <li class="header__navbar-item header__navbar-item--displaynotify">
+                            <a href="" class="">
+                                <i class="header__navbar-icon fas fa-bell"></i> Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__nottify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/6611294b737aeeb34408b3e2c6d8ba10_tn" alt="" class="header_notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Máy tính Lenovo ThingPad Y540 tại FPT Shop Hà Nội</span>
+                                                <span class="header__notify-description">Hàng chính hãng chất lượng cao</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/6611294b737aeeb34408b3e2c6d8ba10_tn" alt="" class="header_notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Máy tính Lenovo ThingPad Y540 tại FPT Shop Hà Nội</span>
+                                                <span class="header__notify-description">Hàng chính hãng chất lượng cao</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/6611294b737aeeb34408b3e2c6d8ba10_tn" alt="" class="header_notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Máy tính Lenovo ThingPad Y540 tại FPT Shop Hà Nội Việt Nam Hồ Chí Minh</span>
+                                                <span class="header__notify-description">Hàng Hàng chính hãng chất lượng cao nhưng đéo có tiền để mua được nóHàng chính hãng chất lượng cao nhưng đéo có tiền để mua được nóchính hãng chất lượng cao nhưng đéo có tiền để mua được nó</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn"> Xem tất cả</a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item"><i class="header__navbar-icon fas fa-info-circle"></i>Trợ giúp</li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>
@@ -47,6 +98,49 @@
         </header>
         <div class="container"></div>
         <footer class="footer"></footer>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <!-- tao khung dki dang nhap -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Kí</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu vừa nhập">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí,bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ </a> &
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__control">
+                        <button class="btn btn--primary">TRỞ LẠI</button>
+                        <button class="btn btn--secondary">Đăng kí</button>
+                    </div>
+                </div>
+                <div class="auth-form__social">
+                    <a href="" class="btn btn--with-icon auth-form__social-facebook">
+                        <i class="fab fa-facebook-square"></i> Kết nối với Facebook</a>
+                    <a href="" class="btn btn--with-icon auth-form__social-google">
+                        <i class="fab fa-google"></i> Kết nối với Google</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

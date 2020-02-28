@@ -1,6 +1,6 @@
 :root {
     --white-color: #fff;
-    --back-color: #000;
+    --black-color: #000;
     --text-color: #333;
 }
 
@@ -13,6 +13,11 @@ html {
     line-height: 1.6rem;
     font-family: sans-serif;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .grid {
@@ -28,4 +33,26 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn {
+    min-width: 142px;
+    border: none;
+    border-radius: 3px;
+    height: 36px;
+    font-size: 1.4rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.btn--primary {
+    background-color: var(--white-color);
+}
+
+.btn.btn.btn--primary:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.btn.btn--secondary {
+    background-color: rgb(243, 82, 82);
 }
