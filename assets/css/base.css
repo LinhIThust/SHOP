@@ -46,6 +46,7 @@ a {
 }
 
 .btn.btn--primary {
+    /* margin-right: 10px; */
     background-color: var(--white-color);
 }
 
@@ -54,5 +55,6 @@ a {
 }
 
 .btn.btn--secondary {
+    /* margin-right: 10px; */
     background-color: rgb(243, 82, 82);
 }
