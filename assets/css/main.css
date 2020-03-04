@@ -1,9 +1,10 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
 .header__navbar {
+    height: var(--header-navbar-heigh);
     display: flex;
     justify-content: space-between;
 }
@@ -11,7 +12,7 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0px;
-    margin-top: 3px;
+    margin: 3px 0 0 0;
 }
 
 .header__navbar-item {
@@ -226,7 +227,7 @@
     /* align-items: center; */
 }
 
-
+ 
 /* modal */
 
 .modal {
@@ -236,7 +237,8 @@
     left: 0;
     bottom: 0;
     display: flex;
-    /* display: none; */
+    display: none;
+    /* animation:  qrDisplay ease-in; */
 }
 
 .modal__overlay {
@@ -255,11 +257,16 @@
     z-index: 1;
     /* position: relative; */
 }
-
+.modal__body-register{
+    display: none;
+}
+.modal__body-login{
+    display: none;
+}
 .auth-form {
     border: 1px solid #a5a5a5;
     border-radius: 4px;
-    height: 400px;
+    height: auto;
     width: 400px;
     background-color: var(--white-color);
     overflow: hidden;
@@ -326,17 +333,20 @@
 
 .auth-form__control {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin-top: 30px;
     padding: 0;
     /* padding: 10px; */
     /* background-color: yellow; */
 }
+.btn--secondary{
+    margin-right: 10px;
+}
 
 .auth-form__social {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 60px;
     padding: 6px;
     background-color: rgb(182, 183, 184);
 }
@@ -354,4 +364,144 @@
     padding: 0 4px;
     background-color: rgb(221, 232, 241);
     color: tomato;
+}
+
+/* form dang nhap */
+.auth-form__help{
+    /* background-color:aqua; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.auth-form__help-link{
+    font-size: 1.4rem;
+    /* margin-right: 50px; */
+    color: #6e6260;
+}
+.auth-form__help-separate{
+    display: block;
+    height: 15px;
+    border-left: 1px solid blueviolet;
+    margin: 4px 8px;
+}
+.auth-form__help-forgot{
+    color:rgb(240, 115, 13)
+}
+
+/* header search */
+
+.header-with-search{
+    display: flex;
+    height: var(--header-search-height);
+    align-items: center;
+}
+
+.header__logo{
+    width: 200px;
+}
+.header__logo-img{
+    width: 150px;
+}
+.header__search{
+    display: flex;
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    align-items: center;
+}
+.header__cart{
+    text-align: center;
+    width: 84px;
+}
+.header__cart-icon{
+    margin-top: 6px;
+    font-size: 2.2rem;
+    color: cornsilk;
+    
+}
+.header__search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: tomato;
+    padding:0 16px;
+
+}
+.header__search-input-wrap{
+    height: 100%;
+    flex: 1;
+    position: relative;
+    /* background-color: rgb(250, 89, 89); */
+}
+.header__search-option{
+    /* background-color: turquoise; */
+    font-size: 1.5rem;
+    margin: 0 16px;
+}
+.header__search-btn{
+    height: 36px;
+    width: 100px;
+    background-color: rgb(224, 119, 33);
+    border: none;
+    outline: none;
+    margin-right: 2px;
+    border-radius: 3px;
+    align-items: center;
+}
+.header__search-btn:hover{
+    cursor: pointer;
+    background-color:rgb(167, 95, 36) ;
+}
+.header__search-icon{
+    /* flex: 1;
+    height: 100%; */
+    font-size: 2rem;
+ 
+}
+
+/* search-history */
+
+.header__search-input:focus ~ .header__search-history{
+    display: block;
+}
+.header__search-history{
+    position: absolute;
+    background-color:var(--white-color);
+    top:calc(100% + 3px) ;
+    left: 0px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgb(158, 207, 52);  
+    display: none;
+
+}
+.header__search-history-title{
+    color: rgb(182, 183, 184);
+    margin-left: 8px;
+    font-size: 1.6rem;
+    /* background-color: rgb(255, 166, 0); */
+}
+.header__search-list{
+    
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0;
+    color: rgb(224, 119, 33);
+    /* background-color: rosybrown; */
+}
+.header__search-history-item{
+    text-decoration: none;
+    padding: 4px 12px;
+   
+}
+.header__search-history-item:hover{
+    background-color: rgba(240, 246, 247, 0.739);
+}
+.header__search-history-item a{
+    text-emphasis: none;
+    font-size: 1.3rem;
+    color: var(--text-color)
 }

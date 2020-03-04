@@ -2,6 +2,10 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+
+    --header-height:120px;
+    --header-navbar-height:34px;
+    --header-search-height :calc(var(--header-height)- var(--header-navbar-height));
 }
 
 * {
@@ -46,6 +50,7 @@ a {
 }
 
 .btn.btn--primary {
+    /* margin-right: 10px; */
     background-color: var(--white-color);
 }
 
@@ -54,5 +59,6 @@ a {
 }
 
 .btn.btn--secondary {
+    /* margin-right: 10px; */
     background-color: rgb(243, 82, 82);
 }
